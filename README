@@ -1,0 +1,29 @@
+~~~
+printsequence.py
+~~~
+give 4 numbers and produce the list of jumps with no reduction
+works good for verification
+
+~~~
+trade.cpp
+~~~
+0.  Create a hashMap between keys representing (0, x, y, z) and the associated reduction jump counts.
+        Insert the basecase { h(0,0,0,0) , 0 }
+
+1.  Iterate through (0, b, c, d) in order of discreet sums
+        I.e., 0 < b < c < d <= sum
+
+3.  Give each iteration ct = 0
+
+4.  For a given sequence apply the transformation f(a,b,c,d)
+        I.e., subtract the minimum number and divide by the GCD
+    Calculate the hash key + look it up
+    If it exists, add the count to ct
+    Else insert into hashMap; ct++; subtract the differences; repeat step 4
+
+5. Once we have the count, if this is better than the max count, print out the sequence, sum, and jumps.
+
+~~~
+jumps.cpp
+~~~
+does not really dealy with the minimal number of stocks, but will help searching for best jumps

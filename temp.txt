@@ -1,0 +1,94 @@
+!! UPDATE
+Smallest No. Stocks:    6
+New Best No. Jumps:     5
+(0, 1, 2, 3)
+
+
+!! UPDATE
+Smallest No. Stocks:    7
+New Best No. Jumps:     7
+(0, 1, 2, 4)
+
+
+!! UPDATE
+Smallest No. Stocks:    14
+New Best No. Jumps:     8
+(0, 1, 4, 9)
+
+
+!! UPDATE
+Smallest No. Stocks:    18
+New Best No. Jumps:     9
+(0, 2, 5, 11)
+
+
+!! UPDATE
+Smallest No. Stocks:    21
+New Best No. Jumps:     10
+(0, 2, 6, 13)
+
+
+!! UPDATE
+Smallest No. Stocks:    50
+New Best No. Jumps:     11
+(0, 5, 14, 31)
+
+
+!! UPDATE
+Smallest No. Stocks:    60
+New Best No. Jumps:     12
+(0, 6, 17, 37)
+
+
+!! UPDATE
+Smallest No. Stocks:    71
+New Best No. Jumps:     13
+(0, 7, 20, 44)
+
+
+!! UPDATE
+Smallest No. Stocks:    170
+New Best No. Jumps:     14
+(0, 17, 48, 105)
+
+
+!! UPDATE
+Smallest No. Stocks:    202
+New Best No. Jumps:     15
+(0, 20, 57, 125)
+
+
+!! UPDATE
+Smallest No. Stocks:    241
+New Best No. Jumps:     16
+(0, 24, 68, 149)
+
+
+!! UPDATE
+Smallest No. Stocks:    574
+New Best No. Jumps:     17
+(0, 57, 162, 355)
+
+
+!! UPDATE
+Smallest No. Stocks:    684
+New Best No. Jumps:     18
+(0, 68, 193, 423)
+
+
+!! UPDATE
+Smallest No. Stocks:    815
+New Best No. Jumps:     19
+(0, 81, 230, 504)
+
+
+!! UPDATE
+Smallest No. Stocks:    1942
+New Best No. Jumps:     20
+(0, 193, 548, 1201)
+
+
+!! UPDATE
+Smallest No. Stocks:    2314
+New Best No. Jumps:     21
+(0, 230, 653, 1431)
