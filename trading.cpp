@@ -121,7 +121,7 @@ int main() {
 
     // iterate through sums x in [0, 40 million]
     // x = a+b+c+d where a=0 and a<b<c<d
-    for (currentSum = 0; currentSum < FORTY_MILLION; currentSum++) {
+    for (currentSum = 3544; currentSum < FORTY_MILLION; currentSum++) { // last stopped at 3164
         for (start[3] = 0; start[3] < currentSum; start[3]++) {
             int lim = currentSum - start[3];
             for(start[2] = 0; start[2] < start[3] && start[2] < lim; start[2]++) {

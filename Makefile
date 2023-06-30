@@ -1,11 +1,11 @@
 CXXFLAGS := -std=c++17 -Ofast
 
-all: trade jump
+all: trade
 
-trade: jumps.cpp
+trade: trading.cpp
 	$(CXX) $(CXXFLAGS) $< -o trade
 
-reduce: reduce.cpp
+reduce: jumps.cpp
 	$(CXX) $(CXXFLAGS) $< -o reduce
 
 clean:
