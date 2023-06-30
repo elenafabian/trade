@@ -119,9 +119,31 @@ int main() {
     uint64_t basecase[] = {0, 0, 0, 0};
     hashKey2Count.insert({h(basecase), 1});
 
+    int target_sum = TEN_MILLION * 2;
+    uint64_t bestJumps = 0;
+    start[0] = 0;
+    for (start[1] = 1; start[1] < target_sum / 3; start[1]++) {
+        int lim = target_sum - start[1];
+        for (start[2] = start[1]+1; start[2] < (target_sum - lim) / 2; start[2]++) {
+            start[3] = target_sum - start[2] - start[1];
+            printf("here");
+            if (start[2] > start[1] && quadGCD(start) == 1) {
+                
+                uint64_t quad[] = {start[0], start[1], start[2], start[3]};
+                uint64_t count = c(quad);
+                if (count > bestJumps) {
+                    bestJumps = count;
+                    printf("(%llu, %llu, %llu, %llu)\nJumps:%llu\n\n", start[0], start[1], start[2], start[3], bestJumps);
+                }
+            }
+        }
+    }
+    return 0;
+/* 
     // iterate through sums x in [0, 40 million]
     // x = a+b+c+d where a=0 and a<b<c<d
-    for (currentSum = 3544; currentSum < FORTY_MILLION; currentSum++) { // last stopped at 3164
+    int TWENTY_MILLION = TEN_MILLION * 2;
+    for (currentSum = TWENTY_MILLION; currentSum < TWENTY_MILLION+1; currentSum++) { // last stopped at 3164
         for (start[3] = 0; start[3] < currentSum; start[3]++) {
             int lim = currentSum - start[3];
             for(start[2] = 0; start[2] < start[3] && start[2] < lim; start[2]++) {
@@ -144,6 +166,6 @@ int main() {
                 }
             }
         }
-    }
+    } */
 }
 
