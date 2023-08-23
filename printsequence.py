@@ -62,9 +62,9 @@ def pascalStudy():
 def graphStudy():
     old = 0
     a = 0
-    b = 0
-    c = 0
-    d = 1
+    b = 1
+    c = 2
+    d = 3
 
     while d < 10000000:
         print(f"[{a},{b},{c},{d}]\nJumps={count([a,b,c,d],0)}\nSum={a+b+c+d}\n")
@@ -87,7 +87,6 @@ def graphStudy():
     print(f"Reduce Jumps={count([0,a,b,c],0)}")
     print(f"Reduce Sum={a+b+c}\n")
 
-    
 
 
 
@@ -114,4 +113,4 @@ def main():
     write_order(array)
 
 
-graphStudy()
+main()
